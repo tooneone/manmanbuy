@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="../dist/css/base.css">
 	<link rel="stylesheet" href="../dist/css/category-brankAll.css">
 </head>
-<body>
+<body ng-app="app" ng-controller="rank-listcontroller">
 <div class="layout">
 	<!-- 头部 -->
 	<div class="m-header clearfix">
@@ -33,10 +33,10 @@
 	<div class="hot-rank">
 		<input type="text" value="热门品牌排行">
 	</div>
-	<div class="rank-list">
+	<div class="rank-list" ng-repeat="item in data.result">
 		<ul>
 			<li>
-				<a href="#">平板电视十大品牌<span></span></a>
+				<a href="#" ng-bind="item.brandTitle"><span></span></a>
 			</li>
 		</ul>
 		
@@ -55,5 +55,11 @@
 	<div class="blank"></div>
 </div>
 
+
 </body>
+<script src="../node_modules/angular/angular.js"></script>
+<script src="../js/category-brankAll/index.js"></script>
+<script>
+	
+</script>
 </html>
