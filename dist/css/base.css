@@ -21,6 +21,9 @@ a{
 a:hover{
 	color:#333;
 }
+a:link,a:visited{
+	color: #333;
+}
 
 .clearfix::after,.clearfix::before{
 	content: "";
